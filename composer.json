@@ -1,0 +1,22 @@
+{
+    "name": "vudaltsov/qossmic-deptrac-1021",
+    "description": "Happy Inc. Server",
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8"
+    },
+    "require-dev": {
+        "qossmic/deptrac-shim": "^1"
+    }
+}

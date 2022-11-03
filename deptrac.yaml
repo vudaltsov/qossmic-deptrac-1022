@@ -1,0 +1,13 @@
+parameters:
+    projectDirectory: "%currentWorkingDirectory%"
+
+    paths:
+        - src
+        - tests
+
+    layers:
+        - { name: src,              collectors: [ { type: directory, regex: ^%currentWorkingDirectory%/src/ } ] }
+        - { name: tests,            collectors: [ { type: directory, regex: ^%currentWorkingDirectory%/tests/ } ] }
+
+    ruleset:
+        tests:   [ src ]
